@@ -15,11 +15,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05.DanceHall", "05.DanceHal
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08.Aquarium", "08.Aquarium\08.Aquarium.csproj", "{FB85534A-7DEC-4AE5-9367-75042BD75BBE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.2DRectangleArea", "03.2DRectangleArea\03.2DRectangleArea.csproj", "{E6EF8E95-7CFC-4F05-8146-177267269F4A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03.2DRectangleArea", "03.2DRectangleArea\03.2DRectangleArea.csproj", "{E6EF8E95-7CFC-4F05-8146-177267269F4A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.TailoringWorkshop", "04.TailoringWorkshop\04.TailoringWorkshop.csproj", "{F613CBDC-0ECF-469C-B380-323DDF90C2CF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04.TailoringWorkshop", "04.TailoringWorkshop\04.TailoringWorkshop.csproj", "{F613CBDC-0ECF-469C-B380-323DDF90C2CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.CharityCampaign", "06.CharityCampaign\06.CharityCampaign.csproj", "{B5B6054A-DAF5-4EFB-A7DD-38EE058CE73F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06.CharityCampaign", "06.CharityCampaign\06.CharityCampaign.csproj", "{B5B6054A-DAF5-4EFB-A7DD-38EE058CE73F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestPoolDay", "TestPoolDay\TestPoolDay.csproj", "{B067EF85-5A84-4AEB-90AD-6292755964CE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{B5B6054A-DAF5-4EFB-A7DD-38EE058CE73F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B5B6054A-DAF5-4EFB-A7DD-38EE058CE73F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B5B6054A-DAF5-4EFB-A7DD-38EE058CE73F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B067EF85-5A84-4AEB-90AD-6292755964CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B067EF85-5A84-4AEB-90AD-6292755964CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B067EF85-5A84-4AEB-90AD-6292755964CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B067EF85-5A84-4AEB-90AD-6292755964CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

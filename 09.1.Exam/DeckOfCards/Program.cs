@@ -84,9 +84,7 @@ namespace DeckOfCards
                         }
                     }
                 }
-
             }
-
             Console.WriteLine(string.Join(", ", vehicles));
         }
     }
