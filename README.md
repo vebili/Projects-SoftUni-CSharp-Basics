@@ -6,5 +6,5 @@ All lab problems and exercises from this module, including different cases in ex
 03.C# Nested Conditional Statements<br>
 04.C# Conditional Statements<br>
 05.C# For Loop<br>
-<br>
+06.C# While Loop<br>
 <br>
