@@ -1,83 +1,48 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 
-namespace MagicCards
+namespace Substitute
 {
     class Program
     {
         static void Main(string[] args)
         {
-            List<string> cards = Console.ReadLine()
-                .Split(":", StringSplitOptions.RemoveEmptyEntries)
-                .ToList();
-            string command = "";
-            List<string> deck = new List<string>();
+            int K = int.Parse(Console.ReadLine());
+            int L = int.Parse(Console.ReadLine());
+            int M = int.Parse(Console.ReadLine());
+            int N = int.Parse(Console.ReadLine());
 
-            while ((command = Console.ReadLine()) != "Ready")
+            int substitutes = 0;
+
+            for (int i = K; i <= 8; i++)
             {
-                List<string> tokens = command.Split(" ", StringSplitOptions.RemoveEmptyEntries).ToList();
-
-                switch (tokens[0])
+                for (int p = 9; p >= L; p--)
                 {
-                    case "Add":
-
-                        if (!cards.Contains(tokens[1]))
+                    for (int h = M; h <= 8; h++)
+                    {
+                        for (int f = 9; f >= N; f--)
                         {
-                            Console.WriteLine("Card not found.");
+                            if (i % 2 == 0 && h % 2 == 0 && p % 2 != 0 && f % 2 != 0)
+                            {
+                                if (substitutes >= 6)
+                                {
+                                    return;
+                                }
+                                string checker = i.ToString() + p.ToString();
+                                string checker2 = h.ToString() + f.ToString();
+                                if (checker == checker2)
+                                {
+                                    Console.WriteLine("Cannot change the same player.");
+                                }
+                                else
+                                {
+                                    Console.WriteLine($"{i}{p} - {h}{f}");
+                                    substitutes++;
+                                }
+                            }
                         }
-                        else
-                        {
-                            deck.Add(tokens[1]);
-                        }
-                        break;
-
-                    case "Insert":
-
-                        if (!cards.Contains(tokens[1]) || int.Parse(tokens[2]) > cards.Count || int.Parse(tokens[2]) < 0)
-                        {
-                            Console.WriteLine("Error!");
-                        }
-                        else
-                        {
-                            deck.Insert(int.Parse(tokens[2]), tokens[1]);
-                        }
-                        break;
-
-                    case "Remove":
-                        if (!deck.Contains(tokens[1]))
-                        {
-                            Console.WriteLine("Card not found.");
-                        }
-                        else
-                        {
-                            deck.Remove(tokens[1]);
-                        }
-                        break;
-
-                    case "Swap":
-
-                        int card1Index = deck.IndexOf(tokens[1]);
-                        int card2Index = deck.IndexOf(tokens[2]);
-
-                        string current = deck[card1Index];
-                        deck[card1Index] = deck[card2Index];
-                        deck[card2Index] = current;
-                        break;
-                        //int card1Index = deck.IndexOf(tokens[1]);
-                        //int card2Index = deck.IndexOf(tokens[2]);
-
-                        //string current = deck[card1Index];
-                        //deck[card1Index] = deck[card2Index];
-                        //deck[card2Index] = current;
-                        //break;
-
-                    case "Shuffle":
-                        deck.Reverse();
-                        break;
+                    }
                 }
             }
-            Console.WriteLine(string.Join(" ", deck));
         }
     }
 }
