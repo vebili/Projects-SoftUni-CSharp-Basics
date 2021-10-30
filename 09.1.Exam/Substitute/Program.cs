@@ -7,36 +7,34 @@ namespace Substitute
         static void Main(string[] args)
         {
             int K = int.Parse(Console.ReadLine());
+            int N = int.Parse(Console.ReadLine());
             int L = int.Parse(Console.ReadLine());
             int M = int.Parse(Console.ReadLine());
-            int N = int.Parse(Console.ReadLine());
 
-            int substitutes = 0;
+            int counter = 0;
 
             for (int i = K; i <= 8; i++)
             {
-                for (int p = 9; p >= L; p--)
+                for (int q = 9; q >= N; q--)
                 {
-                    for (int h = M; h <= 8; h++)
+                    for (int p = L; p <= 8; p++)
                     {
-                        for (int f = 9; f >= N; f--)
+                        for (int o = 9; o >= M; o--)
                         {
-                            if (i % 2 == 0 && h % 2 == 0 && p % 2 != 0 && f % 2 != 0)
+                            if (i % 2 == 0 && q % 2 != 0 && p % 2 == 0 && o % 2 != 0)
                             {
-                                if (substitutes >= 6)
-                                {
-                                    return;
-                                }
-                                string checker = i.ToString() + p.ToString();
-                                string checker2 = h.ToString() + f.ToString();
-                                if (checker == checker2)
+                                if (i == p && q == o)
                                 {
                                     Console.WriteLine("Cannot change the same player.");
                                 }
                                 else
                                 {
-                                    Console.WriteLine($"{i}{p} - {h}{f}");
-                                    substitutes++;
+                                    Console.WriteLine($"{i}{q} - {p}{o}");
+                                    counter++;
+                                    if (counter == 6)
+                                    {
+                                        return;
+                                    }
                                 }
                             }
                         }
