@@ -13,6 +13,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pirates", "Pirates\Pirates.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Substitute", "Substitute\Substitute.csproj", "{61F1F2FB-5331-432F-ACBA-7FDF75E534D6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.CatFood", "04.CatFood\04.CatFood.csproj", "{0674C505-8EF8-451B-B441-87EBE332F525}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.CatLife", "03.CatLife\03.CatLife.csproj", "{12B50A49-3F2F-4C51-A4DC-1F77538F8F38}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{61F1F2FB-5331-432F-ACBA-7FDF75E534D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{61F1F2FB-5331-432F-ACBA-7FDF75E534D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{61F1F2FB-5331-432F-ACBA-7FDF75E534D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0674C505-8EF8-451B-B441-87EBE332F525}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0674C505-8EF8-451B-B441-87EBE332F525}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0674C505-8EF8-451B-B441-87EBE332F525}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0674C505-8EF8-451B-B441-87EBE332F525}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12B50A49-3F2F-4C51-A4DC-1F77538F8F38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12B50A49-3F2F-4C51-A4DC-1F77538F8F38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12B50A49-3F2F-4C51-A4DC-1F77538F8F38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12B50A49-3F2F-4C51-A4DC-1F77538F8F38}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
